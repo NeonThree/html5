@@ -1,0 +1,286 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	outline: 0; 
+}
+
+body { 
+	font-family: Verdana, Geneva, sans-serif;
+	color: #e6e6e6; 
+	background: #111111;
+}
+
+a { 
+	text-decoration: none;
+}
+
+a:hover { 
+	text-decoration: none; 
+}
+
+a:active { 
+	text-decoration: none; 
+	position:relative;
+	top: 1px;
+}
+
+p { 
+	font-size: 16px; 
+	margin-bottom: 15px; 
+	line-height: 18px;
+}
+
+nav { 
+	width: auto;
+	float:right;
+	font-size: 20px;
+}
+
+nav ul { 
+	margin-top:15px;
+	color:#a4371c;
+}
+
+nav ul li { 
+	display: inline;
+	margin-right: 5px;
+}
+
+nav li a:hover, nav li.active a {
+	color: #fff;
+}
+
+nav li a { 
+	color:#642211;
+}
+
+nav #navDivider {
+	margin-right: 5px;
+	color:#a4371c;
+	cursor:default;
+}
+
+#logo {
+	float:left;
+	height:auto;
+	width:auto;
+	margin-top:10px;
+}
+
+#tagline {
+	padding-top:140px;
+}
+
+h2 { 
+	font-size: 50px;
+	color: #e6e6e6;
+	font-family: 'Tienne', serif;
+	text-align: center;
+}
+
+mark {
+	color:#fff;
+	background-color:#e44d26;
+}
+
+h3 {
+	font-family: 'Tienne', serif;
+	font-size:24px;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+section #about {
+	width:300px;
+	height:auto;
+	margin-top:80px;
+	float:left;
+	text-align:justify;
+	margin-right:30px;
+}
+
+section #skills {
+	width:300px;
+	height:auto;
+	margin-top:80px;
+	float:left;
+	text-align:justify;
+	margin-right:30px;
+}
+
+section #interests {
+	width:300px;
+	height:auto;
+	margin-top:80px;
+	float:left;
+	text-align:justify;
+}
+
+header { 
+	width: 100%;
+	height:60px;
+	background-color:#e44d26;
+	position: fixed; 
+}
+
+#headercontainer {
+	width: 960px; 
+	margin: 0 auto; 
+}
+
+#contentcontainer {
+	width: 960px; 
+	margin: 0 auto; 
+	float: none;
+}
+
+#content ul {
+	margin-top:20px;
+	float: left; 
+	width: 1000px;
+}
+#content ul li {
+	width:300px;
+	list-style: none; 
+	float: left;
+	margin-right: 30px;
+	text-align:justify;
+}
+
+article {
+	float:left;
+	height:200px;
+	margin-top:80px;
+}
+
+.readmore a:link {
+	color:#e44d26;
+}
+
+.readmore a:visited {
+	color:#e44d26;
+}
+
+.readmore a:active {
+	color:#e44d26;
+}
+
+article p {
+	text-align:justify;
+}
+
+
+figcaption {
+	font-family: 'Tienne', serif;
+	font-size:24px;
+	color:#e44d26;
+	margin-bottom:20px;
+}
+
+figure {
+	width:960px;
+}
+
+figure img {
+	float:left;
+}
+
+footer {
+	width:990px;
+	float:left;
+	margin-top:80px;
+	margin-bottom:60px;
+	background-image:url(../images/footerDivider.jpg);
+	background-repeat:repeat-x;
+	overflow:hidden;
+	padding-top:20px;
+}
+
+footer h3 {
+	color:#e44d26;
+}
+
+footer a {
+	color:#fff;
+	
+}
+
+footer a:hover {
+	color:#e44d26;
+	
+}
+
+footer ul li {
+	list-style: none; 
+	margin-right: 30px;
+	font-size:14px;
+	line-height:18px;
+	margin-left:10px;
+}
+
+footer section {
+	width:300px;
+	float:left;
+	margin-right:30px;
+	margin-bottom:23px;
+}
+
+footer #footeralign {
+	margin-left:30px;
+}
+
+footer h3 {
+	font-family: 'Tienne', serif;
+	font-size:20px;
+	text-align:left;
+	margin-bottom:20px;
+}
+
+#photos li a {
+	height:56px;
+	width:56px;
+	float:left;
+	margin-bottom:10px;
+	border-style:solid;
+	border-width:3px;
+	margin-left:5px;
+	margin-right:10px;
+}
+
+#photos li img {
+	height:56px;
+	width:56px;
+}
+
+#socialmedia li a{
+	float:left;
+	margin-right:10px;
+	height:40px;
+	width:40px;
+	border: 0;
+}
+
+#socialmedia li img {
+	border: 0;
+}
+
+#jstwitter {
+	width: 290px;
+	color: #e7e8e9;
+	height:auto;
+}
+
+#jstwitter .tweet a {
+	text-decoration: none;
+}
+
+#jstwitter .tweet a:hover {
+	text-decoration: underline;
+}
+		
+#jstwitter .tweet .time {
+	font-size: 12px;
+	font-style: italic;
+	color:#e44d26;
+	margin-bottom:10px;
+}
