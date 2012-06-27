@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<head>
+
+<!--
+
+Template carefully designed and coded by Neon Three.
+
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons Licence" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">HTML5 Article #1</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.neonthree.com" property="cc:attributionName" rel="cc:attributionURL">Neon Three</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/NeonThree/html5" rel="dct:source">github.com</a>.
+ 
+-->
+
+<title>Some Cafe | Video</title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<script src="../js/html5shiv.js"></script>
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+
+</head>
+
+<body>
+
+<header>
+
+	<nav>
+        
+		<ul>
+        
+			<li><a href="menu.html">Menu</a></li>
+  			<li><a href="gallery.html">Gallery</a></li>
+                            
+		</ul>
+            
+		<section id="logo">
+            
+     		<a href="../index.html"><img src="../images/logo.jpg" width="300" height="90" alt="Logo"></a>
+            
+		</section>
+            
+		<ul id="navtwo">
+        
+			
+            <li><a href="#">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+                            
+		</ul>
+        
+	</nav>
+
+</header>
+
+<section id="feature">
+
+<section id="videocontainer">
+
+<video id='video' 
+    controls 
+    width="886"
+    poster="../images/videoposter.png"> 
+    <source id='mp4'
+      src="../media/trailer.mp4"
+      type='video/mp4; codecs="avc1, mp4a"'> 
+    <source id='ogv'
+      src="../media/trailer.ogv"
+      type='video/ogg; codecs="theora, vorbis"'> 
+    <p>Your user agent does not support the HTML5 Video element.</p> 
+</video>
+
+<div id="footnotediv"></div>
+
+</section>
+
+</section>
+
+<footer>
+
+	<section id="footercontainer">
+
+        Some Cafe 2012 &copy;
+            
+        <section id="social">
+                
+            <a href="http://www.facebook.com/" target="_blank"><img src="../images/facebook.png" width="40" height="40" alt="Facebook"></a>
+            <a href="http://www.twitter.com/" target="_blank"><img src="../images/twitter.png" width="40" height="40" alt="Twitter"></a>
+                
+        </section>
+        
+	</section>
+
+</footer>
+
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+<script src="../js/popcorn.js"></script>
+ 
+<script src="../js/popcorn.footnote.js"></script>
+
+<script src="../js/popcorn.subtitle.js"></script>
+  
+<script>
+    // wait for DOM to load
+    document.addEventListener('DOMContentLoaded', function () {
+      // popcorn events are chainable this means that you can also do:
+      // p.play(); or p.footnote{};
+      // Make a popcorn instance, passing the id of the video element.
+      // notice the <video id='video' ... > at the bottom of the page.
+      var p = Popcorn('#video')
+      // use the footnote plugin
+      // notice the <div id='footnotediv'> tag at the bottom of the page
+      .footnote({
+        start: 0, // seconds
+        end: 15, // seconds
+        text: '',
+        target: 'footnotediv'
+      } )
+      // use the subtitle plugin
+      .subtitle({
+        start: 1, // seconds
+        end: 15, // seconds
+        text: 'We also make fresh popcorn!'
+      } )
+      // make the video play automatically 
+      .play();
+	}, false);
+
+</script>
+  
+</body>
+
+</html>
