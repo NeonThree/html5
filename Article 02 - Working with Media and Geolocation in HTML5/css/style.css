@@ -192,7 +192,7 @@ article p {
 	margin-top:10px;
 }
 
-.button {
+#videobutton {
 	display: inline-block;
 	position: relative;
 	width: 366px;
@@ -210,7 +210,7 @@ article p {
 	margin-left:297px;
 }
 
-.button span {
+#videobutton span {
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
 	background: url(../images/button.png) no-repeat;
@@ -229,7 +229,7 @@ article p {
 	*/
 }
 
-.button:hover span {
+#videobutton:hover span {
 	opacity: 1;
 }
 
@@ -372,9 +372,9 @@ h3 {
 }
 
 #googlemap {
-	margin-right:30px;
 	float:left;
 	border:none;
+	margin-left:42px;
 }
 
 #video {
@@ -392,8 +392,16 @@ h3 {
 	list-style-type: none;
 }
 
+#menulist span {
+	color:#569195;
+	float:right;
+}
+
 #contactinfo {
+	width:100%;
 	text-align:center;
+	float:left;
+	margin-top:60px;
 }
 
 #about {
