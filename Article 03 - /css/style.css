@@ -1,0 +1,298 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/bebasneue-webfont.eot');
+    src: url('../fonts/bebasneue-webfont.eot?#iefix') format('eot'),
+         url('../fonts/bebasneue-webfont.woff') format('woff'),
+         url('../fonts/bebasneue-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue-webfont.svg#webfontX0YNjQNl') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo500Regular';
+    src: url('../fonts/museo500-regular-webfont.eot');
+    src: url('../fonts/museo500-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo500-regular-webfont.woff') format('woff'),
+         url('../fonts/museo500-regular-webfont.ttf') format('truetype'),
+         url('../fonts/museo500-regular-webfont.svg#Museo500Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+  font-family: 'Museo500Regular';
+  src: url('../fonts/museo500-regular-webfont.eot'); /* here you go, IE */
+}
+
+html, body, h1, form, fieldset, legend, ol, li {
+	margin: 0;
+	padding: 0;
+}
+
+* { 
+	margin: 0;
+	padding: 0;
+}
+
+a img {
+	border: none;
+}
+
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	margin: 0;
+	padding: 0;
+	color:#333;
+	background-color:#ddd;
+	font-size:16px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#headerbackground {
+	background:#f9f9f9;
+	height:auto;
+	width:100%;
+	padding: 110px 0px 110px 0px;
+}
+
+#features {
+	width:100%;
+	background-color:#262628;
+	height:100px;
+}
+
+.circle {
+	width: 150px;
+	height: 150px; 
+    -webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	border-radius: 150px;
+	background-color:#ddd;
+	margin: 0 auto;
+}
+
+#circlecontent1 {
+	background-image:url(../images/html5.png);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+#circlecontent2 {
+	background-image:url(../images/neonthree.png);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+#circlecontent3 {
+	background-image:url(../images/css3.png);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+#featurescontainer {
+	width: 960px;
+	margin: 0 auto;	
+}
+
+#details {
+	width:300px;
+	height:auto;
+	float:left;
+	margin-top:30px;
+	padding:10px;
+}
+
+h1 {
+	text-align:center;
+	font-size:85px;
+	margin-top:110px;
+	font-family: 'Museo500Regular';
+	font-weight:100;
+}
+
+h2 {
+	text-align:center;
+	font-size:35px;
+	font-family: 'Pacifico', cursive;
+	font-weight:100;
+	margin-top:25px;
+	color: #8d8d8d;
+}
+
+h3 {
+	text-align:center;
+	font-family: 'BebasNeueRegular';
+	font-size:35px;
+}
+
+p {
+	text-align: justify;
+}
+
+#subscribe {
+	width:960px;
+}
+
+#input {
+	height:100px;
+}
+
+label:matches(:hover, :focus) /for/ input {
+  box-shadow: #fffea1 0 0 8px
+}
+
+$fieldset > input.error {
+    background-color:red;    
+}
+
+form#subscribe {
+	width: 693px;
+	margin: 0 auto;
+	margin-bottom:50px;
+}
+
+form#subscribe fieldset {
+	border: none;
+	margin-bottom: 10px;
+}
+
+form#subscribe legend {
+	text-align:center;
+	font-family: 'Pacifico', cursive;
+	color: #8d8d8d;
+	font-size: 50px;
+	padding-top:50px;
+	margin: 0 auto;
+}
+
+form#subscribe ol li {
+	line-height: 30px;
+	list-style: none;
+	margin-bottom:20px;
+}
+
+form#subscribe ol ol li {
+	background: none;
+	border: none;
+	float: left;
+}
+
+form#subscribe label {
+	float: left;
+	font-size: 18px;
+	width: 165px;
+	text-align:right;
+	margin-right:20px;
+	padding:5px;
+}
+
+form#subscribe button {
+	font-size:30px;
+	font-family: 'BebasNeueRegular';
+	border: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	color: #ffffff;
+	display: block;
+	letter-spacing: 1px;
+	text-shadow: 0 -1px 0px #85b511;
+	width:300px;
+	height:50px;
+	margin-left:195px;
+	background-color: #bfd554; 
+	background-image: url(images/fallback-gradient.png); 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cfe064), to(#a7c63d));
+	background-image: -webkit-linear-gradient(top, #cfe064, #a7c63d); 
+	background-image:    -moz-linear-gradient(top, #cfe064, #a7c63d); 
+	background-image:     -ms-linear-gradient(top, #cfe064, #a7c63d); 
+	background-image:      -o-linear-gradient(top, #cfe064, #a7c63d); 
+	border-color: #85b511;
+	border-style: solid;
+	border-width: 1px;
+	-moz-box-shadow: 0px 4px 0px #85b511;
+	-webkit-box-shadow: 0px 4px 0px #85b511;
+	box-shadow: 0px 4px 0px #85b511;
+}
+form#subscribe button:hover {
+	background-color: #bfd554; 
+	text-shadow: 0 1px 0px #85b511;
+	background-image: url(images/fallback-gradient.png); 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a7c63d), to(#cfe064));
+	background-image: -webkit-linear-gradient(top, #a7c63d, #cfe064); 
+	background-image:    -moz-linear-gradient(top, #a7c63d, #cfe064);
+	background-image:     -ms-linear-gradient(top, #a7c63d, #cfe064);
+	background-image:      -o-linear-gradient(top, #a7c63d, #cfe064);
+	cursor: pointer;
+	-moz-box-shadow: 0px 0px 0px #85b511;
+	-webkit-box-shadow: 0px 0px 0px #85b511;
+	box-shadow: 0px 0px 0px #85b511;
+	position:relative;
+	bottom:-4px;
+}
+
+form#subscribe input:not([type=radio]),
+form#subscribe textarea {
+	border: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	outline: none;
+	padding-left:40px;
+	width: 260px;
+	height:40px;
+	border-color: #ccc;
+	border-style: solid;
+	border-width: 1px;
+	background-repeat:no-repeat;
+	background-position: 10px 50%;
+	color:#333;
+}
+form#subscribe input:not([type=submit]):focus,
+form#subscribe textarea:focus {
+	color:#333;
+	border-color: #c2d757;
+	border-style: solid;
+	border-width: 1px;
+}
+
+form#subscribe #name {
+	background-image:url(../images/name.png);
+}
+
+form#subscribe #website {
+	background-image:url(../images/website.png);
+}
+
+form#subscribe #phone {
+	background-image:url(../images/phone.png);
+}
+
+form#subscribe #email {
+	background-image:url(../images/email.png);
+}
+
+form#subscribe #age {
+	background-image:url(../images/age.png);
+}
+
+#success {
+	text-align:center;
+	height:auto;
+	margin-top:50px;
+}
+
+#neonthree {
+	display: block;
+	margin: 0 auto;
+}
