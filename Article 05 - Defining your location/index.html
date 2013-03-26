@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<!--
+
+Template carefully designed and coded by Neon Three.
+
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons Licence" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">HTML5 Template #5</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.neonthree.com" property="cc:attributionName" rel="cc:attributionURL">Neon Three</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/NeonThree/html5" rel="dct:source">github.com</a>.
+ 
+-->
+
+<meta charset="utf-8" />
+
+<title>Template #5</title>
+
+<!--[if IE]>
+
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+<![endif]-->
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<body>
+    
+    	<header>
+        
+        	<a href="index.html"><section id="logo"></section></a>
+            
+            <section id="tagline">A new standard in web technology</section>
+                    
+        </header>
+        
+        <nav>
+            
+            	<ul>
+                
+                	<li><a href="pages/events.html">Events</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">About</a></li>
+                
+                </ul>
+            
+            </nav>
+        
+        <section id="featureimage">
+        
+        	<div id="featurecontent">
+            
+            </div>
+            
+        </section>
+        
+        <article id="upcomingeventcontainer">
+        
+        <h1>Upcoming Event</h1>
+        
+        <section id="upcomingevent"><a id="upcomingLink" href="#">
+        
+        <img src="images/map1.png" id="upcomingeventimage" width="304" height="185" alt="event image">
+        
+        <div id="date"><h3 id="datenumber">24</h3><br><h3>OCT</h3></div>
+        
+        <h2>Title of Upcoming Event!</h2>
+        
+        <p>Whether you need a bespoke complex system designed, or need help with launching a mobile App, or even exploring proof of concepts for your business.</p>
+        
+        <p>Whether you need a bespoke complex system designed, or need help with launching a mobile App, or even exploring proof of concepts for your business.</p>
+        </a>
+        </section>
+        
+        </article>
+        
+<article id="pasteventscontainer">
+        
+        <h1>Past Events</h1>
+        
+        	<section class="pastevent">
+            
+            	<img src="images/eventimage.jpg" width="204" height="110" id="pasteventimage" alt="past event">
+                
+                <h2>Title of Past Event</h2>
+                
+                <p>Whether you need a bespoke complex system designed, or need help with launching a mobile App, or even exploring proof of concepts for your business.</p>
+                
+         	</section>
+            
+            <section class="pastevent" id="bottompastevent">
+            
+            	<img src="images/eventimage.jpg" width="204" height="110" id="pasteventimage" alt="past event">
+                
+                <h2>Title of Past Event</h2>
+                
+                <p>Whether you need a bespoke complex system designed, or need help with launching a mobile App, or even exploring proof of concepts for your business, we are here to explore all those.</p>
+                
+         	</section>
+        
+        </article>
+        
+        <footer>
+        
+        	<article id="footercontainer">
+            
+            	<section id="footerlinks" class="footersection">
+                
+                	<ul>
+                    
+                    	<li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="pages/events.html">Events</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="http://www.twitter.com/neonthree">Twitter</a></li>
+                        <li><a href="#">Resources</a></li>
+                    
+                    </ul>
+                
+                </section>
+                
+                <section class="footersection">
+                
+                    <h3>HTML5 Events</h3><br>
+
+                    <p>1/4 John Street  Hawthorn VIC 3122<p><br>
+
+                    <p><a href="#">1300 368 777</a></p>
+                
+                </section>
+                
+                <section class="footersection">
+                
+                	<div class="social" id="facebook">
+                    
+                    	<p>Only two more days until the next HTML5 event!</p>
+                    
+                    </div>
+                    
+                    <div class="social" id="twitter">
+                    
+                    	<p>Everything you need to know about our next meet up <a href="#">http://bit.ly/SvNoNV</a><br>
+                      <em>3 Hours ago</em></p>
+                    
+                    </div>
+                
+                </section>
+            
+            </article>
+        
+        </footer>
+        
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	//Calculate the height of <header>
+	//Use outerHeight() instead of height() if have padding
+    var aboveHeight = $('header').outerHeight();
+	
+	// when scroll
+    $(window).scroll(function(){
+		
+		//if scrolled down more than the header's height
+        if ($(window).scrollTop() > aboveHeight){
+			
+			// if yes, add "fixed" class to the <nav>
+			// add padding top to the #content (value is same as the height of the nav)
+            $('nav').addClass('fixed').css('top','0').next().css('');
+        } else {
+			
+			// when scroll up or less than aboveHeight, remove the "fixed" class, and the padding-top
+            $('nav').removeClass('fixed').next().css('padding-top','0');
+        }
+    });
+});
+</script>
+  
+</body>
+
+</html>
