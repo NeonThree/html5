@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<!--
+
+Template carefully designed and coded by Neon Three.
+
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons Licence" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">HTML5 Template #5</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.neonthree.com" property="cc:attributionName" rel="cc:attributionURL">Neon Three</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/NeonThree/html5" rel="dct:source">github.com</a>.
+ 
+-->
+
+<meta charset="utf-8" />
+
+<title>Template #5</title>
+
+<!--[if IE]>
+
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+<![endif]-->
+
+<script src="js/h5utils.js"></script>
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<body>
+    
+    	<header>
+        
+        	<a href="../index.html"><section id="logo"></section></a>
+            
+            <section id="tagline">A new standard in web technology</section>
+                    
+        </header>
+        
+        <nav>
+            
+            	<ul>
+                
+                	<li><a class="active" href="events.html">Events</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">About</a></li>
+                
+                </ul>
+            
+            </nav>
+        
+        <section id="eventsmap">
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <article id="location">
+      <p>Finding your location: <span id="status">checking...</span></p>
+    </article>
+<script>
+function success(position) {
+  var s = document.querySelector('#status');
+  
+  if (s.className == 'success') {
+    // not sure why we're hitting this twice in FF, I think it's to do with a cached result coming back    
+    return;
+  }
+  
+  s.innerHTML = "found you!";
+  s.className = 'success';
+  
+  var mapcanvas = document.createElement('div');
+  mapcanvas.id = 'mapcanvas';
+  mapcanvas.style.height = '400px';
+  mapcanvas.style.width = '100%';
+    
+  document.querySelector('article').appendChild(mapcanvas);
+  
+  var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+  var myOptions = {
+    zoom: 15,
+    center: latlng,
+    mapTypeControl: false,
+    navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("mapcanvas"), myOptions);
+  
+  var marker = new google.maps.Marker({
+      position: latlng, 
+      map: map, 
+      title:"You are here! (at least within a "+position.coords.accuracy+" meter radius)"
+  });
+}
+
+function error(msg) {
+  var s = document.querySelector('#status');
+  s.innerHTML = typeof msg == 'string' ? msg : "failed";
+  s.className = 'fail';
+  
+  // console.log(arguments);
+}
+
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(success, error);
+} else {
+  error('not supported');
+}
+
+</script>
+   
+</section>
+<script src="js/prettify.packed.js"></script>
+<script>
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script>
+try {
+var pageTracker = _gat._getTracker("UA-1656750-18");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+            
+        </section>
+        
+        <article id="upcomingeventcontainer">
+        
+        <h1>Upcoming Event</h1>
+        
+        <section id="upcomingevent"><a id="upcomingLink" href="#">
+        
+        <img src="../images/map1.png" alt="event image" name="upcomingeventimage" width="304" height="185" id="upcomingeventimage">
+        
+        <div id="date"><h3 id="datenumber">24</h3><br><h3>OCT</h3></div>
+        
+        <h2>Title of Upcoming Event!</h2>
+        
+        <p>Whether you need a bespoke complex system designed, or need help with launching a mobile App, or even exploring proof of concepts for your business, we are here to explore all those options with you and bring your ideas to life.</p>
+        
+        <p>Whether you need a bespoke complex system designed, or need help with launching a mobile App, or even exploring proof of concepts for your business, we are here to explore all those options with you and bring your ideas to life.</p>
+        </a>
+        </section>
+        
+        <section id="upcomingevent"><a id="upcomingLink" href="#">
+        
+        
+        
+        <img src="../images/map2.png" id="upcomingeventimage" width="304" height="185" alt="event image">
+        
+        <div id="date"><h3 id="datenumber">24</h3><br><h3>NOV</h3></div>
+        
+        <h2>Title of Upcoming Event!</h2>
+        
+        <p>Whether you need a bespoke complex system designed, or need help with launching a mobile App, or even exploring proof of concepts for your business, we are here to explore all those options with you and bring your ideas to life.</p>
+        
+        <p>Whether you need a bespoke complex system designed, or need help with launching a mobile App, or even exploring proof of concepts for your business, we are here to explore all those options with you and bring your ideas to life.</p>
+        </a>
+        </section>
+        
+        <section id="upcomingevent"><a id="upcomingLink" href="#">
+
+        <img src="../images/map1.png" id="upcomingeventimage" width="304" height="185" alt="event image">
+        
+        <div id="date"><h3 id="datenumber">24</h3><br><h3>DEC</h3></div>
+        
+        <h2>Title of Upcoming Event!</h2>
+        
+        <p>Whether you need a bespoke complex system designed, or need help with launching a mobile App, or even exploring proof of concepts for your business, we are here to explore all those options with you and bring your ideas to life.</p>
+        
+        <p>Whether you need a bespoke complex system designed, or need help with launching a mobile App, or even exploring proof of concepts for your business, we are here to explore all those options with you and bring your ideas to life.</p>
+        </a>
+        </section>
+        
+        </article>
+        
+        <footer>
+        
+        	<article id="footercontainer">
+            
+            	<section id="footerlinks" class="footersection">
+                
+                	<ul>
+                    
+                    	<li><a href="../index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="http://www.twitter.com/neonthree">Twitter</a></li>
+                        <li><a href="#">Resources</a></li>
+                    
+                    </ul>
+                
+                </section>
+                
+                <section class="footersection">
+                
+                    <h3>HTML5 Events</h3><br>
+
+                    <p>1/4 John Street  Hawthorn VIC 3122<p><br>
+
+                    <p><a href="#">1300 368 777</a></p>
+                
+                </section>
+                
+                <section class="footersection">
+                
+                	<div class="social" id="facebook">
+                    
+                    	<p>Only two more days until the next HTML5 event!</p>
+                    
+                    </div>
+                    
+                    <div class="social" id="twitter">
+                    
+                    	<p>Everything you need to know about our next meet up <a href="#">http://bit.ly/SvNoNV</a><br>
+                      <em>3 Hours ago</em></p>
+                    
+                    </div>
+                
+                </section>
+            
+            </article>
+        
+        </footer>
+        
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	//Calculate the height of <header>
+	//Use outerHeight() instead of height() if have padding
+    var aboveHeight = $('header').outerHeight();
+	
+	// when scroll
+    $(window).scroll(function(){
+		
+		//if scrolled down more than the header's height
+        if ($(window).scrollTop() > aboveHeight){
+			
+			// if yes, add "fixed" class to the <nav>
+			// add padding top to the #content (value is same as the height of the nav)
+            $('nav').addClass('fixed').css('top','0').next().css('');
+        } else {
+			
+			// when scroll up or less than aboveHeight, remove the "fixed" class, and the padding-top
+            $('nav').removeClass('fixed').next().css('padding-top','0');
+        }
+    });
+});
+</script>
+  
+</body>
+
+</html>
